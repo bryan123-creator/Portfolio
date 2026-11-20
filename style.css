@@ -1,0 +1,262 @@
+/* root colors */
+:root {
+    --navy: #1f2a44;
+    --coral: #c8362e;
+    --cream: #f7f5f2;
+    --grey: #5b6475;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body */
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cream);
+    color: var(--navy);
+    margin: 0;
+    line-height:1.8;
+}
+
+h1,h2,h3, .logo{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+}
+ .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+ }
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-decoration: none;
+}
+.logo span{
+    color: var(--coral);
+}
+nav a{
+    text-decoration: none;
+    color: var(--navy);
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+section{
+    padding: 64px 8%;
+}
+
+h2{
+    font-size: 32px;
+    margin: 0 0 24px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.eyebrow{
+    color: var(--coral);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.hero h1{
+    font-size: 56px;
+    margin: 0 0 24px;
+}
+.lead{
+    font-size: 20px;
+    color: var(--grey);
+    max-width: 480px;
+}
+ .hero-photo{
+    width: 350px;
+    border-radius: 200px;
+ }
+ .button{
+    display: flex;
+    gap: 24px;
+    margin-top: 28px;
+ }
+ .btn{
+    display: inline-block;
+    padding: 14px 28px;
+    border:2px solid var(--coral);
+    border-radius: 10px;
+    background: var(--coral);
+    color:white ;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+
+ }
+
+ .btn-outline {
+    background: transparent;
+    color: var(--coral);
+ }
+ .about{
+    background:white;
+ }
+ .about p {
+    max-width: 640px;
+
+ }
+ .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+
+ }
+ .skills li {
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: var(--cream);
+    font-weight: 600;
+ }
+ .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+ }
+ .card {
+    max-width: 360px;
+    margin-bottom: 24px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(31,42,68,0.08);
+ }
+
+ .card img {
+    width: 100%;
+    display:block ;
+ }
+.card h3,
+.card p {
+    margin: 16px 20px;
+}
+.card p {
+    color:var(--grey)
+}
+
+.contact {
+    background: #fff;
+    border-radius: 24px;
+    margin: 0 8% 64px;
+    box-shadow: 0 10px 30px rgba(31, 42, 68, 0.06);
+}
+
+.contact h2 {
+    margin-bottom: 32px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 680px;
+    display: grid;
+    gap: 18px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid rgba(31, 42, 68, 0.12);
+    border-radius: 12px;
+    background: var(--cream);
+    padding: 14px 16px;
+    font: inherit;
+    color: var(--navy);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--coral);
+    box-shadow: 0 0 0 3px rgba(200, 54, 46, 0.12);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.contact-form .btn {
+    align-self: flex-start;
+    width: fit-content;
+    border: none;
+    margin-top: 20px;
+}
+
+.contact {
+    background: var(--navy);
+    color:white
+}
+.contact-form {
+    max-width: 520px;
+
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+.contact-form input,    .contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.contact-form btn {
+    margin-top: 20px;
+
+}
+.site-footer {
+    color: white;
+    padding: 24px 8%;
+    text-align: center;
+    color: var(--grey);
+}
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction:column-reverse;
+        text-align: center;
+        width: 200;
+    }
+    .hero-photo {
+        width: 250px;
+    }
+    .site-header{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav a {
+        margin: 0 12;
+    }
+}

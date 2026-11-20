@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Asamoah | Frontend developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="#" class="logo">Richard<span>.</span></a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Hello I'm</p>
+                <h1>RICHARD ASAMOAH</h1>
+                <p class="lead">A frontend developer in Kumasi, I design and build websites that are clear, fast, and easy to use.</p>
+                <div class="buttons">
+                    <a href="#projects" class="btn">See my work</a>
+                    <a href="#contact" class="btn btn-outline">Contact me</a>
+                </div>
+            </div>
+            <img src="image/Avatar.JPG" alt="Illustration of Richard" class="hero-photo">
+        </section>
+
+        <section id="about" class="about">
+            <h2>About me</h2>
+            <p>I started learning web development at the Codolla Skills Lab bootcamp. I enjoy turning ideas into websites that small businesses can be proud of.</p>
+            <ul class="skills">
+                <li>Figma</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="image/Project-1.jpg" alt="Screenshot of the sales app">
+                    <h3>Supermarket sales app</h3>
+                    <p>A product list with a cart and live totals.</p>
+                </article>
+                <article class="card">
+                    <img src="./image/project-2.jpg" alt="Screenshot of a hotel management system">
+                    <h3>Hotel management system</h3>
+                    <p>A system for booking and reserving rooms for guests.</p>
+                </article>
+                <article class="card">
+                    <img src="./image/Project-3.jpg" alt="Screenshot of a local cafe website">
+                    <h3>Cafe website</h3>
+                    <p>A page for a local cafe.</p>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Let's work together</h2>
+            <form class="contact-form">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your message</label>
+                <textarea name="message" id="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Send message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Richard Asamoah. Built at Codolla Skills Lap.</p>
+    </footer>
+</body>
+</html>
